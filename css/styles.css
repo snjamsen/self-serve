@@ -19,7 +19,7 @@ img {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 800;
     text-transform: uppercase;
     color: var(--main-text);
@@ -28,60 +28,77 @@ h1 {
     padding-left: 10px;
 }
 
+@media screen and (min-width: 390px) {
+    h1 {
+        font-size: 28px;
+    }
+}
+
 @media screen and (min-width: 720px) {
     h1 {
-        font-size: 34px;
+        font-size: 30px;
     }
 }
 
 @media screen and (min-width: 920px) {
     h1 {
-        font-size: 38px;
+        font-size: 32px;
     }
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color: var(--main-text);
 
     padding-left: 10px;
 }
 
-@media screen and (min-width: 390px) {
-    p {
-        font-size: 18px;
-    }
-}
-
-@media screen and (min-width: 720px) {
-    p {
-        font-size: 20px;
-    }
-}
-
 /* Main */
+
 main {
-    border: 3px solid #000;
+    max-width: 1340px;
+    margin: 0 auto;
 }
 
-.main__content--container{
+.main__content--container {
+    width: 96%;
+    min-width: 310px;
+    margin: 0 auto;
+}
+
+.background-image {
     background-image: url(../img/podcast-preview-img.png);
     background-repeat: no-repeat;
-    background-color: #000;
     background-size: cover;
     background-position: center;
 
-    min-width: 310px;
+    max-width: 1286px;
     margin: 0 auto;
 
-    width: 96%;
+    position: absolute;
+    top: 0;
+    left: 3%;
+    right: 3%;
+    bottom: 0;
+
+    z-index: -3;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 920px) {
+    .background-image {
+        top: -500px;
+        left: 2.5%;
+        right: 2.5%;
+        bottom: 200px;
+    }
 }
 
 .main__content--blur {
-    background: rgba(10, 10, 10, 0.8);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(18px);
+    background: rgba(10, 10, 10, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 
     display: flex;
     flex-direction: column;
@@ -95,6 +112,7 @@ main {
 @media screen and (min-width: 920px) {
     .main__content--blur {
         flex-direction: row;
+        justify-content: space-between;
 
         padding: 60px 80px;
     }
@@ -111,8 +129,14 @@ main {
 
 @media screen and (min-width: 920px) {
     .main__content {
-        width: 60%;
+        width: 40%;
         margin: 0;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .main__content {
+        width: 50%;
     }
 }
 
@@ -129,10 +153,10 @@ main {
     width: 100%;
 }
 
-.main__content--player iframe {
+/* .main__content--player iframe {
     display: block;
     margin: 0 auto;
-}
+} */
 
 .main__content--listen-now img {
     margin: 0 auto;
@@ -142,12 +166,6 @@ main {
 @media screen and (min-width: 720px) {
     .main__content--listen-now img {
         width: 280px;
-    }
-}
-
-@media screen and (min-width: 920px) {
-    .main__content--listen-now img {
-        
     }
 }
 
@@ -181,12 +199,13 @@ main {
 
 .main__preview {
     width: 100%;
+    max-width: 360px;
     margin: 0 auto;
 }
 
 @media screen and (min-width: 920px) {
     .main__preview {
-        max-width: 430px;
+        width: 40%;
     }
 }
 
@@ -196,12 +215,6 @@ main {
     width: 100%;
     height: auto;
     margin: 10px auto;
-}
-
-@media screen and (min-width: 500px) {
-    .main__preview img {
-        width: 430px;
-    }
 }
 
 /* Description */
@@ -217,7 +230,7 @@ main {
 
 .description p {
     font-size: 16px;
-    line-height: 25px;
+    line-height: 24px;
     color: #000;
     display: block;
 
@@ -228,18 +241,17 @@ main {
 
 @media screen and (min-width: 920px) {
     .description p {
-        font-size: 18px;
+        line-height: 22px;
 
-        padding: 60px 80px;
+        padding: 50px 80px;
     }
 }
-
 
 /* Footer */
 
 footer img {
     width: 200px;
-    margin: 40px auto;
+    margin: 35px auto;
 }
 
 @media screen and (min-width: 500px) {
