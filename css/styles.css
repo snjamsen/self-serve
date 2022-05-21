@@ -74,7 +74,7 @@ main {
     top: 0;
     left: 3%;
     right: 3%;
-    bottom: 0;
+    bottom: -120px;
 
     z-index: -3;
     overflow: hidden;
@@ -93,8 +93,8 @@ main {
 
 .main__content--blur {
     background: rgba(10, 10, 10, 0.7);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 
     display: flex;
     flex-direction: column;
