@@ -166,9 +166,9 @@ main {
     margin: 28px auto;
 }
 
-.main__content--player img {
+/* .main__content--player img {
     width: 100%;
-}
+} */
 
 .main__content--player iframe {
     display: block;
