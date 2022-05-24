@@ -7,19 +7,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,900;1,400;1,500;1,600;1,900&display=swap" rel="stylesheet">
 
     <title>Karaoke around</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel='dns-prefetch' href='//cdnjs.cloudflare.com'/>
+    <link rel='dns-prefetch' href='//code.jquery.com'/>
+
     <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="background-image rellax" data-rellax-speed="-5""></div>
+    <!-- <div class="background-image rellax" data-rellax-speed="-5""></div> -->
     <main class="main">
         <div class="main__content--container">
+            <div class="background-image rellax" data-rellax-speed="-5""></div>
             <div class="main__content--blur">
                 <div class="main__content ">
                     <h1>Karaoke from <br/>around the world</h1>
                     <p>This week, we (collectively) took a vacation to travel the world and sign songs from the far reaches of the planet.</p>
                     <div class="main__content--player">
-                        <!-- <img src="./img/player.png" alt="player"> -->
+                        <img src="./img/player.png" alt="player">
                          
                         <!-- <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/karaoke-from-around-the-world/id1574029840?i=1000557224498"></iframe> -->
                     </div>
@@ -49,7 +55,10 @@
         </div>
     </footer>
     <script src="./node_modules/rellax/rellax.min.js"></script>
-    <script src="./js/main.css"></script>
+    <script>
+        // rellax efect
+        var rellax = new Rellax('.rellax');
+    </script>
 </body>
 </html>
 
