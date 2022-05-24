@@ -196,11 +196,9 @@ main {
     width: 180px;
 }
 
-
 @media screen and (min-width: 390px) {
     .main__content--listen-now img {
         width: 220px;
-        margin: 15px auto;
     }
 }
 
@@ -312,7 +310,7 @@ main {
 
     width: 100%;
     height: auto;
-    margin: 10px auto;
+    margin: 25px auto 10px;
 }
 
 @media screen and (min-width: 500px) {
