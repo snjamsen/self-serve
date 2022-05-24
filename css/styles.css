@@ -66,13 +66,32 @@ p {
 
 main {
     max-width: 1639px;
+    padding: 0 10px;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 500px) {
+    main {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    main {
+        padding: 0 25px;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    main {
+        padding: 0 30px;
+    }
 }
 
 .main__content--container {
     position: relative;
 
-    width: 96%;
+    width: 100%;
     min-width: 310px;
     margin: 0 auto;
 }
@@ -88,8 +107,8 @@ main {
 
     position: absolute;
     top: 0;
-    left: 0px;
-    right: 0px;
+    left: 0;
+    right: 0;
     bottom: 0;
 
     z-index: -3;
@@ -132,6 +151,11 @@ main {
     }
 }
 
+@media screen and (min-width: 1400px) {
+    .main__content--blur {
+        padding: 80px;
+    }
+}
 
 .main__content {
     display: flex;
@@ -316,7 +340,7 @@ main {
     border-radius: 0 0 25px 25px;
     background-color: #fff;
 
-    width: 96%;
+    width: 100%;
     min-width: 310px;
     margin: 0 auto;
 }
